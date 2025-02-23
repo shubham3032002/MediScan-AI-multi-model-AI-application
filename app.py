@@ -45,7 +45,7 @@ def load_llm():
     return ChatGroq(
         model="llama3-70b-8192",
         temperature=0.5,
-        max_tokens=50
+        max_tokens=100
     )
 
 def get_conversation_memory():
@@ -62,9 +62,9 @@ def convert_text_to_speech(text, output_filepath="doctor_response.mp3"):
     return audio_bytes
 
 def main():
-    st.sidebar.title("🤖 MediBot Assistant")
+    st.sidebar.title("🤖 MediScan-AI Assistant")
     st.sidebar.markdown("""
-        MediBot is your AI-powered medical assistant.
+        MediScan-AI is your AI-powered medical assistant.
         ### Features:
         - 🩺 Medical Q&A
         - 🔬 Image Analysis
@@ -75,7 +75,7 @@ def main():
         "chat_history": []
     }))
 
-    st.title("🩺 MediBot - Your Medical Assistant")
+    st.title("🩺 MediScan-AI - Your Medical Assistant")
 
     # Initialize session state
     if "messages" not in st.session_state:
