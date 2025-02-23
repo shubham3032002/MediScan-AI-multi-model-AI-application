@@ -1,0 +1,15 @@
+langchain
+langchain-community
+langchain_groq
+faiss-cpu
+langchain_huggingface
+streamlit
+pypdf
+groq
+PyAudio
+SpeechRecognition
+pydub
+gtts
+pyttsx3
+elevenlabs
+playsound
